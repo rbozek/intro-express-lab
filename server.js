@@ -1,5 +1,6 @@
 // import modules
 import express from 'express'
+//using object destructuring:
 import { todos } from './data/todo-data.js'
 // OR:  (jackson recommended NOT this method, use first / more specific - created problems when I was trying to access data later)
 // import * as todoData from './data/todo-data.js'
