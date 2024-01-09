@@ -1,5 +1,8 @@
 // import modules
 import express from 'express'
+import { todos } from './data/todo-data.js'
+// OR:  (jackson recommended NOT this method, use first / more specific - created problems when I was trying to access data later)
+// import * as todoData from './data/todo-data.js'
 
 // create Express app
 const app = express()
@@ -12,6 +15,12 @@ app.set('view engine', 'ejs')
 
 
 // Mount routes
+app.get('/todos', function(req, res) {
+ res.render('todos/index', {
+   todos: todos
+ })
+})
+
 app.get('/', function(req, res) {
  res.send('<h1>Hello Express in main / path</h1>')
 })
