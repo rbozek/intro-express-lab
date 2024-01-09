@@ -15,6 +15,10 @@ app.get('/', function(req, res) {
  res.send('<h1>Hello Express in main / path</h1>')
 })
 
+app.get('/home', function(req, res) {
+ res.send('<h1>Testing routing to home path</h1>')
+})
+
 app.get('/icecream', function(req, res) {
  res.send('<h1>Testing routing to ice cream path</h1>')
 })
