@@ -4,7 +4,8 @@ import express from 'express'
 // create Express app
 const app = express()
 
-// configure the app (app.set)
+// Configure the app (app.set)
+app.set('view engine', 'ejs')
 
 
 // mount Middleware (app.use)
