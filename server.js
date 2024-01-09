@@ -13,7 +13,7 @@ const app = express()
 // mount routes
 app.get('/', function(req, res) {
  res.send('<h1>testing main / directory</h1>')
-})
+}) 
 
 // tell the app to listen on port 3000
 
