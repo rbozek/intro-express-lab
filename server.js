@@ -22,7 +22,8 @@ app.get('/todos', function(req, res) {
 })
 
 app.get('/', function(req, res) {
- res.send('<h1>Hello Express in main / path</h1>')
+ // res.send('<h1>Hello Express in main / path</h1>')
+ res.redirect('/home')
 })
 
 app.get('/home', function(req, res) {
