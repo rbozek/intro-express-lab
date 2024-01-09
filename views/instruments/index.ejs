@@ -7,15 +7,18 @@
  <title>Document</title>
 </head>
 <body>
- <h1>Todos</h1>
- <ul>
-   <% todos.forEach(todo => { %>
-     <li>
-   <%= todo.text %> 
-   - 
-   <%= todo.done ? 'done' : 'not done' %>
-  </li>
-   <% }) %>
- </ul>
-</body>
+  <h1>Instruments!</h1>
+  <ul>
+    <% instruments.forEach(instrument => { %>
+      <li>
+    <%= instrument.text %> 
+    - 
+    <%= instrument.loud ? 'loud' : 'not so loud' %>
+    - 
+    <%= instrument.easytocarry ? 'easy to carry' : 'heavy as hell' %>
+      </li>
+    <% }) %>
+  </ul>
+
+</body> 
 </html>
