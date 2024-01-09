@@ -16,7 +16,7 @@ app.get('/', function(req, res) {
 })
 
 app.get('/home', function(req, res) {
- res.send('<h1>Testing routing to home path</h1>')
+ res.render('home')
 })
 
 app.get('/icecream', function(req, res) {
