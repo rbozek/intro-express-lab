@@ -25,12 +25,13 @@ app.get('/todos', function(req, res) {
 
 app.get('/instruments', function(req, res) {
  res.render('instruments/index', {
-   instruments: instruments
+   instruments: instruments,
+   name: 'testing name k:v property',
+   otherthing: true
  })
 })
 
 app.get('/', function(req, res) {
- // res.send('<h1>Hello Express in main / path</h1>')
  res.redirect('/home')
 })
 
